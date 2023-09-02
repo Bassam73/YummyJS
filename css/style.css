@@ -310,9 +310,11 @@ li {
 
 #categories-section {
   display: none;
+  background-color: #0d0d0d;
 }
 #category-based-section {
   display: none;
+  background-color: #0d0d0d;
 }
 .category-based-loading-screen {
   background-color: #0d0d0d;
