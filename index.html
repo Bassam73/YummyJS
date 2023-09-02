@@ -1,0 +1,395 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="loading-screen vh-100">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <nav id="side-nav" class="d-flex w-25">
+      <div
+        class="nav-content d-flex flex-column justify-content-between h-100 text-white"
+      >
+        <div class="nav-header">
+          <ul class="ps-4 pt-3">
+            <li class="nav-list1 nav-list">
+              <a id="search">Search</a>
+            </li>
+            <li class="nav-list2 nav-list">
+              <a id="categories">Categories</a>
+            </li>
+            <li class="nav-list3 nav-list">
+              <a id="area">Area</a>
+            </li>
+            <li class="nav-list4 nav-list">
+              <a id="ingredients">Ingredients</a>
+            </li>
+            <li class="nav-list5 nav-list">
+              <a id="contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer pb-3">
+          <ul class="d-flex mb-0">
+            <li><span></span> <i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-solid fa-globe"></i></li>
+          </ul>
+          <p class="col-md-10">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="nav-control bg-white d-flex flex-column justify-content-between"
+      >
+        <img src="imgs/logo.png" class="w-100" alt="" />
+        <span class="text-center"
+          ><i class="fa-solid fa-bars fa-2x" id="Toggle-Nav"></i
+        ></span>
+        <ul>
+          <li>
+            <i class="fa-solid fa-globe"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-share-nodes"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="Home">
+      <div class="container w-75 pt-5">
+        <div class="row g-4" id="home-content"></div>
+      </div>
+    </section>
+
+    <section
+      id="search-section"
+      class="position-absolute top-0 min-vh-100 w-100"
+    >
+      <div
+        class="container py-4 d-flex justify-content-center align-items-center"
+      >
+        <input
+          id="nameSearch"
+          type="text"
+          class="form-control1"
+          placeholder="Search by name"
+        />
+        <input
+          id="letterSearch"
+          type=""
+          class="form-control1"
+          maxlength="1"
+          placeholder="Search by first letter"
+        />
+      </div>
+      <div class="container w-75 pt-5 position-relative">
+        <div class="search-loading-screen w-100 h-100">
+          <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+          </div>
+        </div>
+        <div class="row g-4" id="search-content"></div>
+      </div>
+    </section>
+
+    <section
+      id="categories-section"
+      class="position-relative top-0 min-vh-100 w-100 bg bg-dark"
+    >
+      <div class="category-loading-screen w-100 h-100">
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+      </div>
+      <div class="container w-100 py-5">
+        <div class="row category-content g-3"></div>
+      </div>
+    </section>
+    <section
+      id="category-based-section"
+      class="min-vh-100 position-absolute top-0 bg-dark w-100"
+    >
+      <div class="category-based-loading-screen w-100 h-100">
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+      </div>
+      <div class="container w-75 pt-5">
+        <div class="row g-4" id="category-based-content"></div>
+      </div>
+    </section>
+
+    <section id="meal-details" class="w-100 min-vh-100 position-absolute top-0">
+      <div class="meal-details-loading-screen w-100 h-100">
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row text-white" id="meal-details-content"></div>
+      </div>
+    </section>
+    <section id="area-section" class="w-100 min-vh-100 position-absolute top-0">
+      <div class="Area-loading-screen position-absolute w-100 h-100">
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+      </div>
+      <div class="container py-5 w-75">
+        <div class="row text-white" id="area-content"></div>
+      </div>
+    </section>
+    <section
+      id="area-based-section"
+      class="min-vh-100 position-absolute top-0 bg-dark w-100"
+    >
+      <div class="area-based-loading-screen w-100 h-100">
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+      </div>
+      <div class="container w-75 pt-5">
+        <div class="row g-4" id="area-based-content"></div>
+      </div>
+    </section>
+
+    <section
+      id="ingredients-section"
+      class="w-100 min-vh-100 position-absolute top-0"
+    >
+      <div class="ingredients-loading-screen position-absolute w-100 h-100">
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+      </div>
+      <div class="container py-5 w-100">
+        <div class="row text-white" id="ingredients-content"></div>
+      </div>
+    </section>
+
+    <section
+      id="ingredients-based-section"
+      class="min-vh-100 position-absolute top-0 bg-dark w-100"
+    >
+      <div class="ingredients-based-loading-screen w-100 h-100">
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+      </div>
+      <div class="container w-75 pt-5">
+        <div class="row g-4" id="ingredients-based-content"></div>
+      </div>
+    </section>
+
+    <section
+      id="contact-us"
+      class="w-100 vh-100 position-absolute top-0 justify-content-center align-items-center text-center"
+    >
+      <div class="container w-75">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <input
+              id="userName"
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Name"
+            />
+
+            <div
+              class="alert w-100 alert-danger mt-3 alert-display"
+              id="user-name-alert"
+            >
+              Special characters and numbers not allowed
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+            />
+            <div
+              class="alert w-100 alert-danger mt-3 alert-display"
+              id="email-alert"
+            >
+              Email not valid *exemple@yyy.zzz
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="phoneNumber"
+              type="number"
+              class="form-control"
+              placeholder="Enter Your Phone"
+            />
+            <div
+              class="alert w-100 alert-danger mt-3 alert-display"
+              id="phone-alert"
+            >
+              Enter valid Phone Number
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="age"
+              type="number"
+              class="form-control"
+              placeholder="Enter Your Age"
+            />
+            <div
+              class="alert w-100 alert-danger mt-3 alert-display"
+              id="age-alert"
+            >
+              Enter valid age
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="userPassword"
+              type="password"
+              class="form-control"
+              placeholder="Enter Your Password"
+            />
+            <div
+              class="alert w-100 alert-danger mt-3 alert-display"
+              id="password-alert"
+            >
+              Enter valid password *Minimum eight characters, at least one
+              letter and one number:*
+            </div>
+          </div>
+          <div class="col-md-6">
+            <input
+              id="userRePassword"
+              type="password"
+              class="form-control"
+              placeholder="Repassword"
+            />
+            <div
+              class="alert w-100 alert-danger mt-3 alert-display"
+              id="repassword-alert"
+            >
+              Enter valid repassword
+            </div>
+          </div>
+        </div>
+        <button id="submit" class="btn btn-outline-danger mt-4">Submit</button>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
