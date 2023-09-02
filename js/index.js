@@ -1,7 +1,9 @@
 /*global Functions*/
 $(document).ready(function () {
-  $(".loading-screen").fadeOut(300);
-  $("body").css("overflow", "visible");
+  getApi("", "home-content").then(() => {
+    $(".loading-screen").fadeOut(300);
+    $("body").css("overflow", "visible");
+  });
 });
 async function getApi(name) {
   let response;
@@ -114,8 +116,9 @@ function displayMealDetails(meal) {
 
 /*-------------------------------Nav-Bar----------------------------*/
 let toggleNav = 0;
-let width = $(".nav-content").width();
-function closeNav(width) {
+
+function closeNav() {
+  let width = $(".nav-content").width();
   $("#side-nav").animate({ left: `-${width}` }, 500);
   $("#Toggle-Nav").removeClass("fa-2x fa-x");
   $("#Toggle-Nav").addClass("fa-bars fa-2x");
@@ -141,7 +144,7 @@ function openNav() {
 
 $("#Toggle-Nav").click(function () {
   if (toggleNav == 1) {
-    closeNav(width);
+    closeNav();
   } else {
     openNav();
   }
@@ -158,9 +161,6 @@ function displayAllNone() {
   $("#ingredients-based-section").css("display", "none");
   $("#contact-us").css("display", "none");
 }
-
-/*Home*/
-getApi("", "home-content");
 
 /*---------------------------------Category--------------------------------*/
 async function getCategoryApi() {
@@ -179,13 +179,13 @@ function getCategoryMeal(category) {
   $("#category-based-section").css("display", "block");
 
   getMealsByCategoryApi(category);
-  closeNav(width);
+  closeNav();
 }
 
 $("#categories").click(function () {
   displayAllNone();
   $("#categories-section").css("display", "block");
-  closeNav(width);
+  closeNav();
   getCategoryApi();
 });
 
@@ -248,7 +248,7 @@ $("#search").click(function () {
   $(".search-loading-screen").fadeOut(5);
   displayAllNone();
   $("#search-section").css("display", "block");
-  closeNav(width);
+  closeNav();
 });
 
 $("#nameSearch").keyup(function () {
@@ -269,7 +269,7 @@ $("#area").click(function () {
   displayAllNone();
   $("#area-section").css("display", "block");
   getAreaApi();
-  closeNav(width);
+  closeNav();
 });
 
 async function getAreaApi() {
@@ -314,7 +314,7 @@ function getMealsArea(area) {
   $("#area-based-section").css("display", "block");
 
   getMealsByArea(area);
-  closeNav(width);
+  closeNav();
 }
 
 /*---------------------------------Ingredients--------------------------------*/
@@ -322,7 +322,7 @@ $("#ingredients").click(function () {
   displayAllNone();
   $("#ingredients-section").css("display", "block");
   getIngredientsApi();
-  closeNav(width);
+  closeNav();
 });
 async function getIngredientsApi() {
   $(".ingredients-section-loading-screen").fadeIn(500);
@@ -374,13 +374,13 @@ function getMealsIngredients(ingredients) {
   $("#ingredients-based-section").css("display", "block");
 
   getMealsByingredients(ingredients);
-  closeNav(width);
+  closeNav();
 }
 /* Contact Us */
 $("#contact").click(function () {
   displayAllNone();
   $("#contact-us").css("display", "flex");
-  closeNav(width);
+  closeNav();
 });
 
 $("#userName").keyup(function () {

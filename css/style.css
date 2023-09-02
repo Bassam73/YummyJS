@@ -278,8 +278,10 @@ li {
   background-color: #0d0d0d;
   z-index: 50;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 0;
+  top: 500%;
 }
 /*Categories layer*/
 .category-layer {
@@ -410,7 +412,6 @@ li {
   align-items: center;
   position: absolute;
   top: 0;
-  display: none;
 }
 #contact-us {
   background-color: #0d0d0d;
